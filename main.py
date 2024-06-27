@@ -314,7 +314,7 @@ def Login(message):
 def pass1(message):
     passlogin = message.text.strip()
     if check_credentials(passlogin):
-        if passlogin == 'Qwerty123@@':
+        if passlogin == 'XXXXX':
             bot.send_message(message.chat.id, "Вы вошли в систему Admin, Выберите x,d,v,y", reply_markup= get_reply_keyboard())
             bot.register_next_step_handler(message, iff)
         else:
